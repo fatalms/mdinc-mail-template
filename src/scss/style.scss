@@ -1,0 +1,158 @@
+@use "sass:math";
+
+// @import "icons";
+
+$fontFamily: "Inter";
+$fontSize: 25;
+
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 668;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #000;
+
+@import "null-style";
+body {
+  color: $mainColor;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+  }
+}
+
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1 + px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.page {
+  flex: 1 1 auto;
+  line-height: 15px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+
+  // .page__container
+  &__container {
+    padding: 0 10px;
+    width: 77%;
+  }
+
+  // .page__title
+  &__title {
+    font-size: 14.9085px;
+    color: #619cf9;
+    margin: 0px 0px 25px 0px;
+  }
+
+  // .page__list
+  &__list {
+    margin: 0px 0px 25px 0px;
+  }
+
+  // .page__result
+  &__result {
+    font-size: 12.7787px;
+    color: #3e3e3e;
+    margin: 0px 0px 30px 0px;
+  }
+
+  // .page__button
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    margin: 0px auto 30px auto;
+
+    font-weight: 500;
+    font-size: 11.7138px;
+    line-height: 14px;
+
+    background: #619cf9;
+
+    color: #ffffff;
+
+    box-shadow: 0px 3.72712px 10.6489px rgba(0, 0, 0, 0.05);
+    border-radius: 10.6489px;
+
+    padding: 6px 12px;
+  }
+
+  // .page__ps
+  &__ps {
+  }
+}
+
+.list {
+  font-size: 13px;
+  line-height: 15px;
+  // .list__item
+  &__item {
+    &:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  // .list__content
+  &__content {
+    font-weight: 600;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+
+    color: #3e3e3e;
+
+    img {
+      margin: 0px 1em 0px 0px;
+    }
+  }
+
+  // .list__description
+  &__description {
+    font-weight: 400;
+    color: #757575;
+  }
+}
+
+.button {
+}
+
+.ps {
+  // .ps__text
+  margin: 0px 0px 25px 0px;
+  &__text {
+    font-size: 11.7138px;
+    line-height: 15px;
+
+    color: #3e3e3e;
+  }
+}
+
+@import "./header";
+@import "./footer";

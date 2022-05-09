@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Главная</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--= include('_header.html',{}) -->
+      <main class="page _container">
+        <div class="page__container">
+          <div class="page__title">Что необходимо сделать:</div>
+          <div class="page__list list">
+            <div class="list__item">
+              <p class="list__content"><img src="./img/arrow.svg" alt="arrow" /> Перейдите по ссылке  </p>
+              <p class="list__description">Вы попадёте на страницу VIA MD</p>
+            </div>
+
+            <div class="list__item">
+              <p class="list__content">
+                <img src="./img/arrow.svg" alt="arrow" /> Создайте аккаунт и заполните информацию о себе
+              </p>
+              <p class="list__description">
+                Пожалуйста, при регистрации укажите тот же email, на который пришло это письмо.
+              </p>
+            </div>
+
+            <div class="list__item">
+              <p class="list__content"><img src="./img/arrow.svg" alt="arrow" /> Пройдите диагностику на компьютере</p>
+              <p class="list__description">
+                Вам понадобится камера, микрофон и динамик. Тестирование нужно проходить в браузере Google Chrome, оно
+                займёт 30 минут.  
+              </p>
+            </div>
+          </div>
+
+          <p class="page__result">Результаты автоматически будут отправлены вашему врачу.</p>
+
+          <button class="page__button button">Начать диагностику</button>
+
+          <div class="page__ps ps">
+            <p class="ps__text">С уважением, Юсуповская больница</p>
+            <p class="ps__text">Связаться с врачом - email</p>
+          </div>
+        </div>
+      </main>
+
+      <!--= include('_footer.html',{}) -->
+    </div>
+  </body>
+  <!-- <script src="./js/index.min.js"></script> -->
+</html>
