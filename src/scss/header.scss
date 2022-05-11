@@ -5,7 +5,7 @@
   &__container {
     padding: 16px 0 0 0;
     aspect-ratio: 640 / 284;
-    background: url("../img/background.svg") no-repeat;
+    background: url("https://yoda-dev.mdinc.tech/api/static-file-loader/email/background.svg") no-repeat;
     background-size: contain;
   }
 
@@ -42,15 +42,46 @@
   &__img {
     box-shadow: 0 0 7.98669px rgba(0, 0, 0, 0.15);
     border-radius: 3.19468px;
+    overflow: hidden;
+    display: flex;
+    flex: 0 1 auto;
 
-    height: 100%;
+    height: 30px;
+    height: 130%;
+    background: #ffffff;
 
     position: relative;
 
     & img {
-      height: 100%;
+      height: 80%;
+      transform: translateY(10%);
       object-fit: contain;
     }
+  }
+}
+
+.monitor {
+  position: relative;
+  width: 142.16px;
+  height: 116.75px;
+
+  // .monitor__img
+  &__img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  // .monitor__lottie
+  &__lottie {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -12%);
   }
 }
 
@@ -63,6 +94,7 @@
   font-weight: 500;
   line-height: 17px;
   letter-spacing: 0.5px;
+
   // .welcome__monitor
   &__monitor {
     margin: 0 0 10px 0;
@@ -76,6 +108,7 @@
 
   // .welcome__text
   &__text {
+    letter-spacing: 0.3px;
     font-size: 12.7787px;
     margin: 0px 0px 6px 0px;
 
