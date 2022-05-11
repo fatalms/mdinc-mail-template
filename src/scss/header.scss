@@ -3,7 +3,7 @@
 .header {
   // .header__container
   &__container {
-    padding: 20px 0px 0px 0px;
+    padding: 16px 0 0 0;
     aspect-ratio: 640 / 284;
     background: url("../img/background.svg") no-repeat;
     background-size: contain;
@@ -11,6 +11,7 @@
 
   // .header__item
   &__item {
+    margin: 0px 0px 5px 0px;
   }
 }
 
@@ -21,7 +22,7 @@
   height: 20px;
   // .logo__title
   &__title {
-    margin: 0px 6.3px 0px 21px;
+    margin: 0 0 0 16px;
 
     & img {
       width: 100%;
@@ -31,7 +32,7 @@
 
   // .logo__separator
   &__separator {
-    margin: 0px 7.4px 0px 0px;
+    margin: 0 7.4px 0 0;
     height: 20px;
     width: 1px;
     background: #fff;
@@ -39,10 +40,12 @@
 
   // .logo__img
   &__img {
-    box-shadow: 0px 0px 7.98669px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 7.98669px rgba(0, 0, 0, 0.15);
     border-radius: 3.19468px;
 
     height: 100%;
+
+    position: relative;
 
     & img {
       height: 100%;
@@ -59,19 +62,22 @@
   color: #f2f2f2;
   font-weight: 500;
   line-height: 17px;
+  letter-spacing: 0.5px;
   // .welcome__monitor
   &__monitor {
-    margin: 0px 0px 10px 0px;
+    margin: 0 0 10px 0;
   }
 
   // .welcome__header
   &__header {
     font-size: 16.9842px;
+    margin: 0px 0px 3px 0px;
   }
 
   // .welcome__text
   &__text {
     font-size: 12.7787px;
+    margin: 0px 0px 6px 0px;
 
     span {
       color: #ffd980;

@@ -16,7 +16,9 @@ $md4: 479.98;
 $mainColor: #000;
 
 @import "null-style";
+
 body {
+  letter-spacing: 0.5px;
   color: $mainColor;
 
   &._lock {
@@ -30,8 +32,6 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  &._loaded {
-  }
 }
 
 ._container {
@@ -59,7 +59,7 @@ body {
 
   // .page__container
   &__container {
-    padding: 0 10px;
+    padding: 0 5px;
     width: 77%;
   }
 
@@ -67,19 +67,19 @@ body {
   &__title {
     font-size: 14.9085px;
     color: #619cf9;
-    margin: 0px 0px 25px 0px;
+    margin: -10px 0 17px 0;
   }
 
   // .page__list
   &__list {
-    margin: 0px 0px 25px 0px;
+    margin: 0 0 25px 0;
   }
 
   // .page__result
   &__result {
     font-size: 12.7787px;
     color: #3e3e3e;
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 29px 0;
   }
 
   // .page__button
@@ -87,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
 
-    margin: 0px auto 30px auto;
+    margin: 0 auto 30px auto;
 
     font-weight: 500;
     font-size: 11.7138px;
@@ -97,10 +97,10 @@ body {
 
     color: #ffffff;
 
-    box-shadow: 0px 3.72712px 10.6489px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3.72712px 10.6489px rgba(0, 0, 0, 0.05);
     border-radius: 10.6489px;
 
-    padding: 6px 12px;
+    padding: 7px 17px;
   }
 
   // .page__ps
@@ -109,12 +109,13 @@ body {
 }
 
 .list {
+  letter-spacing: 0.2px;
   font-size: 13px;
   line-height: 15px;
   // .list__item
   &__item {
     &:not(:last-child) {
-      margin: 0px 0px 20px 0px;
+      margin: 0 0 17px 0;
     }
   }
 
@@ -129,7 +130,7 @@ body {
     color: #3e3e3e;
 
     img {
-      margin: 0px 1em 0px 0px;
+      margin: 0 1em 0 0;
     }
   }
 
@@ -145,7 +146,7 @@ body {
 
 .ps {
   // .ps__text
-  margin: 0px 0px 25px 0px;
+  margin: 0 0 25px 0;
   &__text {
     font-size: 11.7138px;
     line-height: 15px;
