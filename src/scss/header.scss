@@ -1,12 +1,12 @@
 @use "sass:math";
 
 .header {
+  padding: 16px 0 0 0;
+  // aspect-ratio: 640 / 284;
+  background: url("https://yoda-dev.mdinc.tech/api/static-file-loader/email/background.svg") top no-repeat;
+  background-size: cover;
   // .header__container
   &__container {
-    padding: 16px 0 0 0;
-    aspect-ratio: 640 / 284;
-    background: url("https://yoda-dev.mdinc.tech/api/static-file-loader/email/background.svg") no-repeat;
-    background-size: contain;
   }
 
   // .header__item
@@ -22,7 +22,7 @@
   height: 20px;
   // .logo__title
   &__title {
-    margin: 0 0 0 16px;
+    // margin: 0 0 0 16px;
 
     & img {
       width: 100%;
@@ -32,7 +32,7 @@
 
   // .logo__separator
   &__separator {
-    margin: 0 7.4px 0 0;
+    // margin: 0 7.4px 0 0;
     height: 20px;
     width: 1px;
     background: #fff;
@@ -102,12 +102,20 @@
 
   // .welcome__header
   &__header {
+    color: #f2f2f2;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.5px;
     font-size: 16.9842px;
     margin: 0px 0px 3px 0px;
   }
 
   // .welcome__text
   &__text {
+    color: #f2f2f2;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.5px;
     letter-spacing: 0.3px;
     font-size: 12.7787px;
     margin: 0px 0px 6px 0px;

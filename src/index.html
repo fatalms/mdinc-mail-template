@@ -4,66 +4,128 @@
     <title>Главная</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
-    <!-- <meta name="robots" content="noindex, nofollow"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="wrapper">
-      <!--= include('_header.html',{}) -->
-      <main class="page _container">
-        <div class="page__container">
-          <div class="page__title">Что необходимо сделать:</div>
-          <div class="page__list list">
-            <div class="list__item">
-              <p class="list__content">
-                <img src="https://yoda-dev.mdinc.tech/api/static-file-loader/email/arrow.svg" alt="arrow" /> Перейдите
-                по ссылке  
-              </p>
-              <p class="list__description">Вы попадёте на страницу VIA MD</p>
-            </div>
+    <table cellpadding="0" cellspacing="4" width="100%" style="font-family: Inter, Roboto, Arial">
+      <tbody>
+        <tr>
+          <td align="center">
+            <table cellpadding="0" cellspacing="4" width="600px">
+              <tbody>
+                <tr>
+                  <td>
+                    <!--= include('_header.html',{}) -->
+                    <!-- MAIN -->
+                    <table cellpadding="0" cellspacing="4" width="100%">
+                      <tbody>
+                        <tr>
+                          <td align="center">
+                            <table cellpadding="0" cellspacing="4" width="70%">
+                              <thead>
+                                <th></th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Что необходимо сделать:</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table
+                                      table
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      width="100%"
+                                      style="
+                                        letter-spacing: 0.2px;
+                                        font-size: 13px;
+                                        line-height: 15px;
+                                        border-spacing: 0 10px;
+                                      "
+                                    >
+                                      <thead>
+                                        <th></th>
+                                        <th></th>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <!--= include('_list-item.html',{'t1': 'Перейдите по ссылке', 't2': 'Вы попадёте на страницу VIA MD'}) -->
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <!--= include('_list-item.html',{'t1': 'Создайте аккаунт и заполните информацию о себе', 't2': 'Пожалуйста, при регистрации укажите тот же email, на который пришло это письмо.'}) -->
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <!--= include('_list-item.html',{'t1': 'Пройдите диагностику на компьютере', 't2': 'Вам понадобится камера, микрофон и динамик. Тестирование нужно проходить в браузере Google Chrome, оно займёт 30 минут.'}) -->
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
 
-            <div class="list__item">
-              <p class="list__content">
-                <img src="https://yoda-dev.mdinc.tech/api/static-file-loader/email/arrow.svg" alt="arrow" /> Создайте
-                аккаунт и заполните информацию о себе
-              </p>
-              <p class="list__description">
-                Пожалуйста, при регистрации укажите тот же email, на который пришло это письмо.
-              </p>
-            </div>
+                                <tr>
+                                  <td colspan="2" style="font-size: 12.7787px; color: #3e3e3e; margin: 0 0 29px 0">
+                                    Результаты автоматически будут отправлены вашему врачу.
+                                  </td>
+                                </tr>
 
-            <div class="list__item">
-              <p class="list__content">
-                <img src="https://yoda-dev.mdinc.tech/api/static-file-loader/email/arrow.svg" alt="arrow" /> Пройдите
-                диагностику на компьютере
-              </p>
-              <p class="list__description">
-                Вам понадобится камера, микрофон и динамик. Тестирование нужно проходить в браузере Google Chrome, оно
-                займёт 30 минут.  
-              </p>
-            </div>
-          </div>
+                                <tr>
+                                  <td align="center">
+                                    <a
+                                      style="
+                                        margin: 0 auto 30px auto;
+                                        display: inline-block;
+                                        font-weight: 500;
+                                        font-size: 11.7138px;
+                                        line-height: 14px;
 
-          <p class="page__result">Результаты автоматически будут отправлены вашему врачу.</p>
+                                        background: #619cf9;
 
-          <button class="page__button button">Начать диагностику</button>
+                                        color: #ffffff;
 
-          <div class="page__ps ps">
-            <p class="ps__text">С уважением, Юсуповская больница</p>
-            <p class="ps__text">Связаться с врачом - email</p>
-          </div>
-        </div>
-      </main>
+                                        box-shadow: 0 3.72712px 10.6489px rgba(0, 0, 0, 0.05);
+                                        border-radius: 10.6489px;
 
-      <!--= include('_footer.html',{}) -->
-    </div>
+                                        padding: 7px 17px;
+                                      "
+                                    >
+                                      Начать диагностику
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 11.7138px; line-height: 15px; color: #3e3e3e">
+                                    С уважением, Юсуповская больница
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 11.7138px; line-height: 15px; color: #3e3e3e">
+                                    Связаться с врачом - email
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--= include('_footer.html',{}) -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <!-- <script src="./js/index.min.js"></script> -->
 </html>

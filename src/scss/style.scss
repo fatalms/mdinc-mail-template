@@ -1,17 +1,11 @@
 @use "sass:math";
 
-// @import "icons";
-
-$fontFamily: "Inter";
+$fontFamily: Inter, Roboto, Arial;
 $fontSize: 25;
 
 $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 668;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
 
 $mainColor: #000;
 
@@ -32,21 +26,6 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-
-._container {
-  max-width: $maxWidthContainer + px;
-  margin: 0 auto;
-  @media (max-width: $md1 + px) {
-    max-width: 970px;
-  }
-  @media (max-width: $md2+px) {
-    max-width: 750px;
-  }
-  @media (max-width: $md3+px) {
-    max-width: none;
-    padding: 0 10px;
-  }
 }
 
 .page {
@@ -84,10 +63,8 @@ body {
 
   // .page__button
   &__button {
-    display: flex;
-    justify-content: center;
-
     margin: 0 auto 30px auto;
+    display: inline-block;
 
     font-weight: 500;
     font-size: 11.7138px;
