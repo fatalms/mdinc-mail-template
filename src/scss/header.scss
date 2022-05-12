@@ -12,12 +12,14 @@
   // .header__item
   &__item {
     margin: 0px 0px 5px 0px;
+    position: relative;
+    z-index: 1;
   }
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   height: 20px;
   // .logo__title
@@ -36,15 +38,21 @@
     height: 20px;
     width: 1px;
     background: #fff;
+    // float: left;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   // .logo__img
   &__img {
+    // float: left;
+    display: inline-block;
+    vertical-align: middle;
     box-shadow: 0 0 7.98669px rgba(0, 0, 0, 0.15);
     border-radius: 3.19468px;
     overflow: hidden;
-    display: flex;
-    flex: 0 1 auto;
+    // display: flex;
+    // flex: 0 1 auto;
 
     height: 30px;
     height: 130%;
@@ -62,8 +70,10 @@
 
 .monitor {
   position: relative;
-  width: 142.16px;
-  height: 116.75px;
+  width: 18%;
+  aspect-ratio: 143 / 116;
+  overflow: hidden;
+  // height: 116.75px;
 
   // .monitor__img
   &__img {
@@ -71,7 +81,10 @@
     z-index: 0;
     top: 0;
     left: 0;
+    right: 0;
     bottom: 0;
+
+    width: 100%;
   }
 
   // .monitor__lottie
@@ -86,9 +99,9 @@
 }
 
 .welcome {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 
   color: #f2f2f2;
   font-weight: 500;
@@ -97,7 +110,7 @@
 
   // .welcome__monitor
   &__monitor {
-    margin: 0 0 10px 0;
+    margin: 0 auto 10px auto;
   }
 
   // .welcome__header
@@ -107,7 +120,8 @@
     line-height: 17px;
     letter-spacing: 0.5px;
     font-size: 16.9842px;
-    margin: 0px 0px 3px 0px;
+    margin: 0px auto 3px auto;
+    text-align: center;
   }
 
   // .welcome__text
@@ -118,7 +132,8 @@
     letter-spacing: 0.5px;
     letter-spacing: 0.3px;
     font-size: 12.7787px;
-    margin: 0px 0px 6px 0px;
+    margin: 0px auto 6px auto;
+    text-align: center;
 
     span {
       color: #ffd980;

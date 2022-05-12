@@ -14,10 +14,11 @@ $mainColor: #000;
 body {
   letter-spacing: 0.5px;
   color: $mainColor;
-
-  &._lock {
-    overflow: hidden;
-  }
+  width: 850px;
+  height: min-content;
+  position: relative;
+  margin: 0px auto;
+  // background: url("https://yoda-dev.mdinc.tech/api/static-file-loader/email/background.svg") top no-repeat;
 }
 
 .wrapper {
@@ -29,17 +30,19 @@ body {
 }
 
 .page {
-  flex: 1 1 auto;
   line-height: 15px;
   font-weight: 600;
+  z-index: 1;
+  position: relative;
 
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  margin: 0px 10%;
 
   // .page__container
   &__container {
     padding: 0 5px;
-    width: 77%;
+    // width: 77%;
   }
 
   // .page__title
@@ -59,6 +62,10 @@ body {
     font-size: 12.7787px;
     color: #3e3e3e;
     margin: 0 0 29px 0;
+  }
+
+  // .page__button-container
+  &__button-container {
   }
 
   // .page__button
@@ -101,13 +108,23 @@ body {
     font-weight: 600;
     /* or 117% */
 
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     color: #3e3e3e;
 
+    position: relative;
+    // padding: 0px 0px 0px 1em;
+
     img {
-      margin: 0 1em 0 0;
+      display: inline-block;
+      vertical-align: baseline;
+      height: 100%;
+      // position: absolute;
+      // left: 0;
+      // top: 50%;
+      // right: 0;
+      // transform: translateY(-50%);
     }
   }
 
