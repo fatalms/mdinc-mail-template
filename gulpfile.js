@@ -28,7 +28,7 @@ const directories = {
     html: "./dist/",
     js: "./dist/js/",
     css: "./dist/css/",
-    images: "./dishttps://yoda-dev.mdinc.tech/api/static-file-loader/email/",
+    images: "./dist/img/",
     fonts: "./dist/fonts/",
   },
   src: {
@@ -36,16 +36,13 @@ const directories = {
     js: ["./src/js/index.js"],
     css: "./src/scss/style.scss",
     fonts: "./src/fonts/*.ttf",
-    images: [
-      "./srhttps://yoda-dev.mdinc.tech/api/static-file-loader/email/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
-      "!**/favicon.*",
-    ],
+    images: ["./src/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}", "!**/favicon.*"],
   },
   watch: {
     html: "./src/**/*.html",
     js: "./src/**/*.js",
     css: "./src/scss/**/*.scss",
-    images: "./srhttps://yoda-dev.mdinc.tech/api/static-file-loader/email/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
+    images: "./src/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
   },
   clean: "./dist",
 };
