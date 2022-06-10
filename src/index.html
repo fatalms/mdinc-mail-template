@@ -10,18 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <table
-      stye="'*, *:before, *:after': {
-      padding: 0,
-      margin: 0,
-      border: 0,
-      boxSizing: 'border-box',
-    }"
-      cellpadding="0"
-      cellspacing="4"
-      width="100%"
-      style="font-family: Inter, Roboto, Arial"
-    >
+    <table cellpadding="0" cellspacing="4" width="100%" style="font-family: Inter, Roboto, Arial">
       <tbody>
         <tr>
           <td align="center">
@@ -36,61 +25,47 @@
                         <tr>
                           <td align="center">
                             <table cellpadding="0" cellspacing="4" width="80%">
-                              <thead>
-                                <th></th>
-                              </thead>
                               <tbody>
                                 <tr>
-                                  <td style="font-size: 14.9085px; color: #619cf9">Что необходимо сделать:</td>
+                                  <td align="center">
+                                    <img
+                                      src="./img/lock.png"
+                                      alt=""
+                                      style="display: block; height: 145px; width: 170px; margin-bottom: 40px"
+                                    />
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center">
+                                    <div
+                                      style="
+                                        margin-bottom: 40px;
+                                        font-weight: 500;
+                                        font-size: 25px;
+                                        line-height: 17px;
+                                        color: #3e3e3e;
+                                      "
+                                    >
+                                      Забыли пароль?
+                                    </div>
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <table
-                                      table
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      width="100%"
+                                    <div
                                       style="
-                                        letter-spacing: 0.2px;
-                                        font-size: 13px;
+                                        margin-bottom: 35px;
+                                        font-weight: 400;
+                                        font-size: 12.7787px;
                                         line-height: 15px;
-                                        border-spacing: 0 10px;
+                                        color: #3e3e3e;
                                       "
                                     >
-                                      <thead>
-                                        <th></th>
-                                        <th></th>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <!--= include('_list-item.html',{'t1': 'Перейдите по ссылке', 't2': 'Вы попадёте на страницу VIA MD'}) -->
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <!--= include('_list-item.html',{'t1': 'Создайте аккаунт и заполните информацию о себе', 't2': 'Пожалуйста, при регистрации укажите тот же email, на который пришло это письмо.'}) -->
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <!--= include('_list-item.html',{'t1': 'Пройдите диагностику на компьютере', 't2': 'Вам понадобится камера, микрофон и динамик. Тестирование нужно проходить в браузере Google Chrome, оно займёт 30 минут.'}) -->
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                                      Всё в порядке, мы поможем! <br />
+                                      Для восстановления пароля нажмите на кнопку:
+                                    </div>
                                   </td>
                                 </tr>
-
-                                <tr style="margin: 0 0 29px 0">
-                                  <td
-                                    colspan="2"
-                                    style="font-size: 12.7787px; color: #3e3e3e; display: block; margin-bottom: 10px"
-                                  >
-                                    Результаты автоматически будут отправлены вашему врачу.
-                                  </td>
-                                </tr>
-
                                 <tr>
                                   <td align="center">
                                     <a
@@ -101,31 +76,69 @@
                                         margin: 0 auto 30px auto;
                                         display: inline-block;
                                         font-weight: 500;
-                                        font-size: 11.7138px;
-                                        line-height: 14px;
-
-                                        background: #619cf9;
+                                        font-size: 15px;
+                                        line-height: 18px;
 
                                         color: #ffffff;
 
-                                        box-shadow: 0 3.72712px 10.6489px rgba(0, 0, 0, 0.05);
-                                        border-radius: 10.6489px;
+                                        background: #8196e2;
+                                        box-shadow: 0px 4.59854px 13.1387px rgba(0, 0, 0, 0.05);
+                                        border-radius: 15px;
 
-                                        padding: 7px 17px;
+                                        padding: 8px 40px;
                                       "
                                     >
-                                      Начать диагностику
+                                      Восстановить
                                     </a>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="font-size: 11.7138px; line-height: 15px; color: #3e3e3e">
-                                    С уважением, Юсуповская больница
+                                  <td>
+                                    <div
+                                      style="
+                                        margin-bottom: 45px;
+                                        font-weight: 400;
+                                        font-size: 12.7787px;
+                                        line-height: 15px;
+                                        color: #757575;
+                                      "
+                                    >
+                                      Если вы не запрашивали ссылку, но получили это письмо, возможно, что кто-то другой
+                                      пытается получить доступ к вашему аккаунту. Рекомендуем сменить пароль.
+                                    </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="font-size: 11.7138px; line-height: 15px; color: #3e3e3e">
-                                    Связаться с врачом - email
+                                  <td>
+                                    <div
+                                      style="
+                                        margin-bottom: 22px;
+                                        font-weight: 600;
+                                        font-size: 12.7787px;
+                                        line-height: 15px;
+                                      "
+                                    >
+                                      Остались вопросы? Напишите нам на
+                                      <a
+                                        href="mailto:via@mdinc.ru"
+                                        style="outline: none; text-decoration: none; color: #df8e1d"
+                                        >via@mdinc.ru</a
+                                      >
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div
+                                      style="
+                                        margin-bottom: 10px;
+                                        font-weight: 400;
+                                        font-size: 12.7787px;
+                                        line-height: 15px;
+                                      "
+                                    >
+                                      С уважением, команда VIA MD
+                                    </div>
                                   </td>
                                 </tr>
                               </tbody>
